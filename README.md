@@ -6,7 +6,8 @@ A Java implementation of a percolation system modeled with a Weighted Quick Unio
 **Features**
 - Custom union–find algorithm
 - Monte Carlo simulation to estimate percolation threshold
-- Visualizer handles user input to simulate any 
+- Visualizer handles user input and process animation
+- Modular and organized code
 
 **Usage**
 ```bash
@@ -25,15 +26,18 @@ java -cp bin PercolationVisualizer
   all sites in that connected component are colored blue.
 - The simulation continues until the system percolates.
 
-**Goal:**
-Simulate percolation to estimate the percolation threshold p* (the average of opened to closed sites over t trials).
+**Goal**
 
-**Significance:**
-Currently there is theoretically known way to calculate the percolation threshold p∗ for a square lattice. Experimentally its estimated as p* ≈ 0.592746
-https://mathworld.wolfram.com/PercolationThreshold.html
+- Simulate percolatsion to estimate the percolation threshold p* (the fraction of open sites when the system percolates, averaged over t trials).
 
-**Outcome:**
-I was able to successfully estimate p* ~= 0.592... accurately to three decimal places.
+**Significance**
+
+- Currently there is no known way to calculate the percolation threshold p∗ for a square lattice theoretically. Experimentally its estimated as p* ≈ 0.592746.
+  https://mathworld.wolfram.com/PercolationThreshold.html
+
+**Outcome**
+
+- I was able to successfully estimate mean p* ~= 0.592... accurately to three decimal places.
 
 ### Example 1
 
